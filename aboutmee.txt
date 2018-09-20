@@ -1,0 +1,7 @@
+<h1>This is About <strong>ME</strong></h1>
+
+<p>My name is <em>Ashton Cho</em>, and I live in San Jose, California! I like to play video games like <a href="https://minecraft.net/en-us/">Minecraft</a>!</p>
+
+<p>I have two dogs and a hamster, who all like me! My dog's names are Bear and Latte, one brown and one latte colored.</p>
+
+<p>I spend most of my time playing video games and looking at <a href="">memes

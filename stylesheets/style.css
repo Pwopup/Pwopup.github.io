@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+p{color:darkslategrey;}
+p{font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";}
+p{font-size: 30px;}
+
+h1{font-size: 50px;
+color:darkgray;}
+
+body{background-color: black;}
+
+.Green{color:green;}
+.beige{color:beige;}
+*/
+
+/* -------------------------------------
+
+			BASIC STRUCTURE
+
+--------------------------------------*/
+
+#wrapper
+{
+	width: 960px;
+	padding: 5px;
+	margin: 20px auto;
+}
+#header
+{
+	height: 100px;
+}
+#sidebar
+{
+	float: left;
+	width: 300px;
+}
+#content
+{
+	float: right;
+	width: 600px;
+}
+#footer
+{
+	clear: both;
+}
+
+/* -------------------------------------
+
+			COLORS AND FONTS
+			colors.adobe.com
+			#96B3B6
+			#4F7F8E
+			#454250
+			#628DB6
+			#4E5C6A
+
+--------------------------------------*/
+
+body
+{
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	color:#180D0F;
+	/*background-color:#4F7F8E;*/
+	background-image: url("../images/background.jpg");
+}
+
+#header, #sidebar, #content, #footer
+{
+	background-color: rgba(255,255,255,0.15);
+	margin-bottom: 4px;
+	border: double;
+	border-radius: 8px;
+	border-color: #4E5C6A;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+/* -------------------------------------
+
+			RESPONSIVE DESIGN
+
+--------------------------------------*/
+
+@media screen and (max-width: 980px)
+{
+	
+}
+
+@media screen and (max-width: 700px)
+{
+	
+}
+
+@media screen and (max-width: 480px)
+{
+	
+}
+
+/* Phones */
+@media only screen
+	and (min-device-width: 320px)
+	and (max-device-width: 568px){
+		
+}
