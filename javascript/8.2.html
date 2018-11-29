@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script type="text/javascript">
+	var CookieClicker = 
+	{
+		cookies:0,
+		click: function()
+		{
+			this.cookies++;
+			if(typeof(Storage)!== "undefined")
+			{
+				localStorage.setItem("shreks", this.cookies);
+			}
+			else
+			{
+				console.log("go away u non shrek lover");
+			}
+			this.update_screen();
+		},
+		update_screen: function()
+		{
+			document.getElementById("output").innerHTML = this.cookies;
+		},
+		init:function()
+		{
+			if(typeof(Storage) !== "undefined")
+			{
+				var c = localStorage.getItem("shreks");
+				if(c != null)
+				{
+					CookieClicker.cookies=Number(c);
+					CookieClicker.update_screen();
+				}
+				else
+				{
+					console.log("Go away u non shrek lover");
+				}
+			}
+		}
+	}
+	window.onload = CookieClicker.init;
+</script>
+</head>
+
+<body>
+	<a href = "JavaScript:CookieClicker.click();"><img width="950px" src="../images/shrek.jpg" alt="SHREK"></a>
+	<p id ="output"></p>
+	<p>shreks</p>
+</body>
+</html>

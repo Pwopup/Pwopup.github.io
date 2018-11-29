@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>7.13 - switch program</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		var program = prompt("Enter F to convert Fahrenheit to Celsius\n\nEnter C to convert Celsius to Fahrenheit\n\nEnter D to convert Dollar to Yen\n\nEnter Y to convert Yen to Dollar").toLowerCase();
+		while(true)
+		{
+		switch(program) {
+			case "f":
+				var far = prompt("Enter a temperature in Fahrenheit to convert to celsius");
+				var shrek = ((Number(far)-32)*5)/9;
+				alert(far+" degrees Fahrenheit is "+shrek+" degrees celsius");
+				break;
+			case "c":
+				var cel = prompt("Enter a temperature in Celsius to convert to farenheit");
+				var fiona = (Number(cel) * 9/5) + 32;
+				alert(cel+" degrees Celsius is "+fiona+" degrees farenheit");
+				break;
+			case "d":
+				var dollar = prompt("Enter US dollars to convert to Japanese YEN");
+	
+				// convert dollar to yen
+				var donkey = Number(dollar)*112.41;
+				alert(dollar+" US Dollar is equal to "+donkey+" yen");
+				break;
+			case "y":
+				var yen = prompt("Enter Japanese Yen to convert to US Dollar");
+				
+				var farquad = Number(yen)/112.41;
+				alert(yen+" yen is equal to "+farquad+ " US Dollar");
+				break;
+			default:
+				alert("go away");
+				break;			
+			}
+			var more_scores= confirm("do u want to build a snowman");
+			if(!more_scores)
+				{
+					break;
+				} else {
+					program = prompt("Enter F to convert Fahrenheit to Celsius\n\nEnter C to convert Celsius to Fahrenheit\n\nEnter D to convert Dollar to Yen\n\nEnter Y to convert Yen to Dollar").toLowerCase();
+				}
+		}
+	</script>
+</body>
+</html>

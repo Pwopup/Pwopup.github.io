@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>7.9 - Infinite Loop</title>
+</head>
+
+<body>
+<script type="text/javascript">
+	while(true)
+		{
+
+	var dollar = prompt("Enter US dollars to convert to Japanese YEN");
+	var shrek = 1;
+	// convert dollar to yen
+	var yen = Number(dollar)*112.41;
+	alert(dollar+" is equal to "+yen+" yen");
+	var more_scores = confirm("do u want to fail again??");
+	if(!more_scores)
+	{
+		break;
+	}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>6.5 - Google Maps</title>
+</head>
+
+<body>
+<script type="text/javascript">
+	var distance = prompt("Tell a distance in miles");
+	var speed = prompt("Tell a Spped in Miles Per Hour");
+	var time = (Number(distance)/Number(speed))*60;
+	var hours = (time - time%60)/60;
+	var minutes = time%60; 
+	
+	if(time >= 60)
+	{
+		document.write(hours + " hours and " + minutes + " minutes");	
+	} else
+	{
+		document.write(time+" minutes");
+	}
+</script>
+</body>
+</html>

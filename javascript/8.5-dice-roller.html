@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>8.5 - Dice Roller</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+	var oone = 0;
+	var twoo = 0
+	var threee = 0;
+	var foour = 0;
+	var fiive = 0;
+	var siix = 0;
+		function diceRoller()
+		{
+			// calculate roll
+			var shrek = Math.ceil(Math.random()*6);
+			return shrek;
+		}
+		var fiona = 1;
+
+		while(fiona<=100)
+		{
+			var donkey = diceRoller();
+			document.write(" "+donkey)
+			if (donkey == 1)
+			{
+				oone++;
+			}
+			else if (donkey == 2)
+			{
+				twoo++;
+			}
+			else if (donkey == 3)
+			{
+				threee++;
+			}
+			else if (donkey == 4)
+			{
+				foour++;
+			}
+			else if (donkey == 5)
+			{
+				fiive++;
+			}
+			else if (donkey == 6)
+			{
+				siix++;
+			}
+			fiona++;
+		}
+		document.write("<br><br>"+"one was printed:"+oone);
+		document.write("<br>"+"two was printed:"+twoo);
+		document.write("<br>"+"three was printed:"+threee);
+		document.write("<br>"+"four was printed:"+foour);
+		document.write("<br>"+"five was printed:"+fiive);
+		document.write("<br>"+"six was printed:"+siix);
+
+	</script>
+</body>
+</html>

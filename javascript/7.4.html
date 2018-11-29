@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		while(true)
+			{
+				var score = eval(prompt("Give me ur grade or else ban"));
+				if(score < 0 || score > 100)
+				{
+					alert("ur bad do it again");
+					continue;
+				}
+				else if (score >= 90)
+				{
+					alert("90 do better");		
+				}
+				else if (score >= 80)
+				{
+					alert("80 and up is bad ");		
+				}
+				else if (score >= 70)
+				{
+					alert("70 do better");		
+				}
+				else if (score >= 60)
+				{
+					alert("60 do better");		
+				}
+				else
+				{
+					alert("Ur rly bad");
+				}
+				var more_scores = confirm("do u want to fail again??");
+				if( !more_scores)
+				{
+					break;
+			    }
+			}
+	</script>
+</body>
+</html>

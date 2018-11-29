@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dankman</title>
+</head>
+
+<body>
+	<h1>HAng the MEn</h1>
+	<pre><strong style="font-size: 40px;">
+		  +---+
+		  O   |
+		 /|\  |
+		 / \  |-
+		   ___|___
+	</strong><pre>
+	<script type = "text/javascript">
+		var words = [
+			"shrek",
+			"sanic",
+			"footlettuce",
+			"almightyloaf",
+			"pepe",
+			"shootingstars",
+			"spongebob",
+			"datboi",
+			"waluigi",
+			"rottenrobbie"
+		];
+		var word = words[Math.floor(Math.random() * words.length)];
+		var answerArray = [];
+		for(var i = 0; i < word.length; i++)
+		{
+			answerArray[i] = "_";
+		}
+		var remainingLetters = word.length;
+
+		while(remainingLetters > 0)
+		{
+			alert(answerArray.join(" "));
+			var guess = prompt("Guess lettees, or click cancer to stop plyin");
+			if(guess === null)
+			{
+				break;
+			}
+			else if(guess.length !== 1)
+			{
+				alert("Plz enter single person");
+			}
+			else
+			{
+				for(var j = 0; j < word.length; j++)
+				{
+					if(word[j] === guess)
+					{
+						answerArray[j] = guess;
+					   	remainingLetters--;
+					}
+				}
+			}
+		}
+		alert(answerArray.join(" "));
+		alert("Ur bad, butt u win. THis is word " + word);
+	</script>
+</body>
+</html>
